@@ -1,15 +1,17 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
-  Env:
-    GlueRole:
-      Type: String
-      Description: ARN da role do Glue
-    GlueScriptsS3:
-      Type: String
-      Description: Bucket do S3 onde os scripts Glue estão localizados
-    TagDMA:
-      Type: String
-      Description: Tag DMA
+  GlueRole:
+    Type: String
+    Description: ARN da role do Glue
+    Default: arn:aws:iam::850202893763:role/RoleProducerDMA
+  GlueScriptsS3:
+    Type: String
+    Description: Bucket do S3 onde os scripts Glue estão localizados
+    Default: glue-script-path-dma
+  TagDMA:
+    Type: String
+    Description: Tag DMA
+    Default: DataMeshAcademy
 
 Resources:
   ProdutoCreditoSorJob:
