@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo Install phase started
-  pre-build:
+  pre_build:
     commands:
       - echo Started pre_build phase
       - ls -al
@@ -14,4 +14,3 @@ phases:
   build:
     commands:
       - echo Build started on 'date'
-      
