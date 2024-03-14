@@ -14,4 +14,4 @@ phases:
   build:
     commands:
       - echo Build started on 'date'
-      - aws cloudformation deploy --template-file glue.yml --stack-name GlueJobsDMA --parameter-overrides parameters.json
+      - aws cloudformation deploy --template-file glue.yml --stack-name GlueJobsDMA --parameter-overrides file://parameters.json
