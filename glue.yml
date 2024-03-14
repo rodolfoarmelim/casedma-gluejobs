@@ -68,7 +68,7 @@ Resources:
         Name: glueetl
         ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec.py"
         PythonVersion: "3"
-      NumberOfWorkers: 2
+      NumberOfWorkers: 10
       WorkerType: G.1X
       Timeout: 45
       GlueVersion: '4.0'
