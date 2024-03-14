@@ -1,0 +1,7 @@
+{
+  "Parameters": {
+    "GlueRole": "arn:aws:iam::850202893763:role/RoleProducerDMA",
+    "GlueScriptsS3": "glue-script-path-dma",
+    "TagDMA": "DataMeshAcademy"
+  }
+}
