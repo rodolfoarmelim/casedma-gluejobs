@@ -3,11 +3,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
+      - echo Install phase started
+  pre-build:
+    commands:
+      - echo Started pre_build phase
+      - ls -al
+      - python --version
+      - aws --version
+      - aws s3 cp --recursive ./scripts/ s3://glue-script-path-dma/scripts/
   build:
     commands:
-      - npm run generate
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'scripts'
+      - echo Build started on 'date'
+      
