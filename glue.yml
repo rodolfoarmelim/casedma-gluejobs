@@ -12,7 +12,7 @@ Parameters:
     Type: String
     Description: Tag DMA
     Default: DataMeshAcademy
-    
+
 
 Resources:
   ProdutoCreditoSorJob:
@@ -22,7 +22,7 @@ Resources:
       Role: !Sub "${GlueRole}"
       Command:
         Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/src/script_sor.py"
+        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor.py"
         PythonVersion: "3"
       NumberOfWorkers: 2
       WorkerType: G.1X
@@ -44,7 +44,7 @@ Resources:
       Role: !Sub "${GlueRole}"
       Command:
         Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/src/script_sot.py"
+        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot.py"
         PythonVersion: "3"
       NumberOfWorkers: 2
       WorkerType: G.1X
@@ -66,7 +66,7 @@ Resources:
       Role: !Sub "${GlueRole}"
       Command:
         Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/src/script_spec.py"
+        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec.py"
         PythonVersion: "3"
       NumberOfWorkers: 2
       WorkerType: G.1X
