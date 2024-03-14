@@ -35,7 +35,7 @@ Resources:
         DMA: !Ref TagDMA
       DefaultArguments:
         --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'git a
+        --enable-spark-ui: 'true'
 
   ProdutoCreditoSotJob:
     Type: AWS::Glue::Job
