@@ -1,0 +1,7 @@
+{
+  "Parameters": {
+    "GlueRole": "arn:aws:iam::850202893763:role/iamsr/produto_credito_glue_role",
+    "GlueScriptsS3": "aws-glue-scripts-sa-east-1-850202893763",
+    "TagDMA": "DMA"
+  }
+}
