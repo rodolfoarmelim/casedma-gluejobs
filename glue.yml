@@ -79,4 +79,4 @@ Resources:
         DMA: !Ref TagDMA
       DefaultArguments:
         --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'       
+        --enable-spark-ui: 'true'    
