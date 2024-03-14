@@ -80,3 +80,5 @@ Resources:
       DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
+
+        
