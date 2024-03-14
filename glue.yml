@@ -12,6 +12,7 @@ Parameters:
     Type: String
     Description: Tag DMA
     Default: DataMeshAcademy
+    
 
 Resources:
   ProdutoCreditoSorJob:
