@@ -36,6 +36,11 @@ Resources:
       DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
+      SupportFiles:
+        - local_path: script_sor.py
+          s3_bucket: glue-script-path-dma
+          s3_prefix: scripts/
+          execute_upload: True
 
   ProdutoCreditoSotJob:
     Type: AWS::Glue::Job
@@ -58,6 +63,11 @@ Resources:
       DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
+      SupportFiles:
+        - local_path: script_sot.py
+          s3_bucket: glue-script-path-dma
+          s3_prefix: scripts/
+          execute_upload: True
 
   ProdutoCreditoSpecJob:
     Type: AWS::Glue::Job
@@ -80,3 +90,8 @@ Resources:
       DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
+      SupportFiles:
+        - local_path: script_spec.py
+          s3_bucket: glue-script-path-dma
+          s3_prefix: scripts/
+          execute_upload: True
