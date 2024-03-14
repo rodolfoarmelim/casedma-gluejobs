@@ -37,7 +37,7 @@ Resources:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
       SupportFiles:
-        - local_path: script_sor.py
+        - local_path: scripts/script_sor.py
           s3_bucket: glue-script-path-dma
           s3_prefix: scripts/
           execute_upload: True
@@ -64,7 +64,7 @@ Resources:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
       SupportFiles:
-        - local_path: script_sot.py
+        - local_path: scripts/script_sot.py
           s3_bucket: glue-script-path-dma
           s3_prefix: scripts/
           execute_upload: True
@@ -91,7 +91,7 @@ Resources:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
       SupportFiles:
-        - local_path: script_spec.py
+        - local_path: scripts/script_spec.py
           s3_bucket: glue-script-path-dma
           s3_prefix: scripts/
           execute_upload: True
