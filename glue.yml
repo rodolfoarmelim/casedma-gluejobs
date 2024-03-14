@@ -32,7 +32,7 @@ Resources:
       SecurityConfiguration: "glue_security_configuration"
       Tags:
         DMA: !Ref TagDMA
-      Arguments:
+      DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
 
@@ -54,7 +54,7 @@ Resources:
       SecurityConfiguration: "glue_security_configuration"
       Tags:
         DMA: !Ref TagDMA
-      Arguments:
+      DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
 
@@ -76,6 +76,6 @@ Resources:
       SecurityConfiguration: "glue_security_configuration"
       Tags:
         DMA: !Ref TagDMA
-      Arguments:
+      DefaultArguments:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
