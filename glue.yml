@@ -3,15 +3,15 @@ Parameters:
   GlueRole:
     Type: String
     Description: ARN da role do Glue
-    Default: arn:aws:iam::850202893763:role/RoleProducerDMA
+    #Default: arn:aws:iam::850202893763:role/RoleProducerDMA
   GlueScriptsS3:
     Type: String
     Description: Bucket do S3 onde os scripts Glue estão localizados
-    Default: glue-script-path-dma
+    #Default: glue-script-path-dma
   TagDMA:
     Type: String
     Description: Tag DMA
-    Default: DataMeshAcademy
+    #Default: DataMeshAcademy
 
 
 Resources:
@@ -68,7 +68,7 @@ Resources:
         Name: glueetl
         ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec.py"
         PythonVersion: "3"
-      NumberOfWorkers: 10
+      NumberOfWorkers: 2
       WorkerType: G.1X
       Timeout: 45
       GlueVersion: '4.0'
