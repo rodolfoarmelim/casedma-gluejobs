@@ -113,794 +113,794 @@ Resources:
         --enable-glue-datacatalog: 'true'
         --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobAndres:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_andres"
-      Role: !Sub "${GlueRoleAndres}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_andres.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobAndres:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_andres"
+        Role: !Sub "${GlueRoleAndres}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_andres.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobAndres:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_andres"
-      Role: !Sub "${GlueRoleAndres}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_andres.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobAndres:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_andres"
+        Role: !Sub "${GlueRoleAndres}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_andres.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobAndres:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_andres"
-      Role: !Sub "${GlueRoleAndres}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_andres.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobAndres:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_andres"
+        Role: !Sub "${GlueRoleAndres}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_andres.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobAthos:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_athos"
-      Role: !Sub "${GlueRoleAthos}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_athos.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobAthos:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_athos"
+        Role: !Sub "${GlueRoleAthos}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_athos.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobAthos:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_athos"
-      Role: !Sub "${GlueRoleAthos}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_athos.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobAthos:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_athos"
+        Role: !Sub "${GlueRoleAthos}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_athos.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobAthos:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_athos"
-      Role: !Sub "${GlueRoleAthos}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_athos.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobAthos:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_athos"
+        Role: !Sub "${GlueRoleAthos}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_athos.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobByanca:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_byanca"
-      Role: !Sub "${GlueRoleByanca}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_byanca.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobByanca:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_byanca"
+        Role: !Sub "${GlueRoleByanca}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_byanca.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobByanca:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_byanca"
-      Role: !Sub "${GlueRoleByanca}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_byanca.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobByanca:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_byanca"
+        Role: !Sub "${GlueRoleByanca}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_byanca.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobByanca:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_byanca"
-      Role: !Sub "${GlueRoleByanca}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_byanca.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobByanca:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_byanca"
+        Role: !Sub "${GlueRoleByanca}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_byanca.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobFrancieli:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_francieli"
-      Role: !Sub "${GlueRoleFrancieli}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_francieli.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobFrancieli:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_francieli"
+        Role: !Sub "${GlueRoleFrancieli}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_francieli.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobFrancieli:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_francieli"
-      Role: !Sub "${GlueRoleFrancieli}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_francieli.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobFrancieli:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_francieli"
+        Role: !Sub "${GlueRoleFrancieli}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_francieli.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobFrancieli:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_francieli"
-      Role: !Sub "${GlueRoleFrancieli}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_francieli.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobFrancieli:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_francieli"
+        Role: !Sub "${GlueRoleFrancieli}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_francieli.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobGuilherme:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_guilherme"
-      Role: !Sub "${GlueRoleGuilherme}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_guilherme.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobGuilherme:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_guilherme"
+        Role: !Sub "${GlueRoleGuilherme}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_guilherme.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobGuilherme:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_guilherme"
-      Role: !Sub "${GlueRoleGuilherme}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_guilherme.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobGuilherme:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_guilherme"
+        Role: !Sub "${GlueRoleGuilherme}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_guilherme.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobGuilherme:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_guilherme"
-      Role: !Sub "${GlueRoleGuilherme}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_guilherme.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobGuilherme:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_guilherme"
+        Role: !Sub "${GlueRoleGuilherme}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_guilherme.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobJaqueline:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_jaqueline"
-      Role: !Sub "${GlueRoleJaqueline}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_jaqueline.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobJaqueline:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_jaqueline"
+        Role: !Sub "${GlueRoleJaqueline}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_jaqueline.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobJaqueline:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_jaqueline"
-      Role: !Sub "${GlueRoleJaqueline}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_jaqueline.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobJaqueline:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_jaqueline"
+        Role: !Sub "${GlueRoleJaqueline}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_jaqueline.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobJaqueline:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_jaqueline"
-      Role: !Sub "${GlueRoleJaqueline}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_jaqueline.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobJaqueline:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_jaqueline"
+        Role: !Sub "${GlueRoleJaqueline}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_jaqueline.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobLucas:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_lucas"
-      Role: !Sub "${GlueRoleLucas}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_lucas.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobLucas:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_lucas"
+        Role: !Sub "${GlueRoleLucas}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_lucas.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobLucas:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_lucas"
-      Role: !Sub "${GlueRoleLucas}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_lucas.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobLucas:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_lucas"
+        Role: !Sub "${GlueRoleLucas}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_lucas.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobLucas:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_lucas"
-      Role: !Sub "${GlueRoleLucas}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_lucas.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobLucas:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_lucas"
+        Role: !Sub "${GlueRoleLucas}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_lucas.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobNatalia:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_natalia"
-      Role: !Sub "${GlueRoleNatalia}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_natalia.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobNatalia:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_natalia"
+        Role: !Sub "${GlueRoleNatalia}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_natalia.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobNatalia:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_natalia"
-      Role: !Sub "${GlueRoleNatalia}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_natalia.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobNatalia:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_natalia"
+        Role: !Sub "${GlueRoleNatalia}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_natalia.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobNatalia:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_natalia"
-      Role: !Sub "${GlueRoleNatalia}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_natalia.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobNatalia:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_natalia"
+        Role: !Sub "${GlueRoleNatalia}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_natalia.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobRafaella:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_rafaella"
-      Role: !Sub "${GlueRoleRafaella}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_rafaella.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobRafaella:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_rafaella"
+        Role: !Sub "${GlueRoleRafaella}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_rafaella.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobRafaella:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_rafaella"
-      Role: !Sub "${GlueRoleRafaella}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_rafaella.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobRafaella:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_rafaella"
+        Role: !Sub "${GlueRoleRafaella}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_rafaella.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobRafaella:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_rafaella"
-      Role: !Sub "${GlueRoleRafaella}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_rafaella.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobRafaella:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_rafaella"
+        Role: !Sub "${GlueRoleRafaella}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_rafaella.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobRenato:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_renato"
-      Role: !Sub "${GlueRoleRenato}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_renato.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobRenato:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_renato"
+        Role: !Sub "${GlueRoleRenato}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_renato.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobRenato:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_renato"
-      Role: !Sub "${GlueRoleRenato}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_renato.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobRenato:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_renato"
+        Role: !Sub "${GlueRoleRenato}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_renato.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobRenato:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_renato"
-      Role: !Sub "${GlueRoleRenato}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_renato.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobRenato:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_renato"
+        Role: !Sub "${GlueRoleRenato}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_renato.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobScarlet:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_scarlet"
-      Role: !Sub "${GlueRoleScarlet}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_scarlet.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobScarlet:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_scarlet"
+        Role: !Sub "${GlueRoleScarlet}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_scarlet.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobScarlet:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_scarlet"
-      Role: !Sub "${GlueRoleScarlet}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_scarlet.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobScarlet:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_scarlet"
+        Role: !Sub "${GlueRoleScarlet}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_scarlet.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobScarlet:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_scarlet"
-      Role: !Sub "${GlueRoleScarlet}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_scarlet.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobScarlet:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_scarlet"
+        Role: !Sub "${GlueRoleScarlet}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_scarlet.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSorJobVanessa:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sor_vanessa"
-      Role: !Sub "${GlueRoleVanessa}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_vanessa.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSorJobVanessa:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sor_vanessa"
+        Role: !Sub "${GlueRoleVanessa}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_vanessa.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSotJobVanessa:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_sot_vanessa"
-      Role: !Sub "${GlueRoleVanessa}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_vanessa.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSotJobVanessa:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_sot_vanessa"
+        Role: !Sub "${GlueRoleVanessa}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_vanessa.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
 
-ProdutoCreditoSpecJobVanessa:
-    Type: AWS::Glue::Job
-    Properties:
-      Name: "corp_produto_cartao_credito_spec_vanessa"
-      Role: !Sub "${GlueRoleVanessa}"
-      Command:
-        Name: glueetl
-        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_vanessa.py"
-        PythonVersion: "3"
-      NumberOfWorkers: 2
-      WorkerType: G.1X
-      Timeout: 45
-      GlueVersion: '4.0'
-      ExecutionProperty:
-        MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
-      Tags:
-        DMA: !Ref TagDMA
-      DefaultArguments:
-        --enable-glue-datacatalog: 'true'
-        --enable-spark-ui: 'true'
+  ProdutoCreditoSpecJobVanessa:
+      Type: AWS::Glue::Job
+      Properties:
+        Name: "corp_produto_cartao_credito_spec_vanessa"
+        Role: !Sub "${GlueRoleVanessa}"
+        Command:
+          Name: glueetl
+          ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_vanessa.py"
+          PythonVersion: "3"
+        NumberOfWorkers: 2
+        WorkerType: G.1X
+        Timeout: 45
+        GlueVersion: '4.0'
+        ExecutionProperty:
+          MaxConcurrentRuns: 2
+        SecurityConfiguration: "glue_security_configuration"
+        Tags:
+          DMA: !Ref TagDMA
+        DefaultArguments:
+          --enable-glue-datacatalog: 'true'
+          --enable-spark-ui: 'true'
