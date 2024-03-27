@@ -19,7 +19,7 @@ spark.conf.set('hive.exec.dynamic.partition.mode', 'nonstrict')
 # Ler tabela como DynamicFrame
 df_sot = glueContext.create_dynamic_frame.from_catalog(
     database="db_sot_banco_xis",
-    table_name="produto_credito_sot"
+    table_name="produto_credito_sot_rodolfo"
 ).toDF()
 
 # Selecionar colunas necessárias
@@ -56,4 +56,4 @@ df_final = df_spec.select(
 )
 
 # Salvar tabela final
-df_final.write.insertInto("db_spec_banco_xis.produto_credito_spec", overwrite=True)
+df_final.write.insertInto("db_spec_banco_xis.produto_credito_spec_rodolfo", overwrite=True)

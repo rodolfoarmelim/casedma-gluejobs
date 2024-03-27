@@ -1,0 +1,78 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  GlueRole:
+    Type: String
+    Description: ARN da role do Glue
+  GlueScriptsS3:
+    Type: String
+    Description: Bucket do S3 onde os scripts Glue estão localizados
+  TagDMA:
+    Type: String
+    Description: Tag DMA
+
+Resources:
+  ProdutoCreditoSorJob:
+    Type: AWS::Glue::Job
+    Properties:
+      Name: "corp_produto_cartao_credito_sor_rodolfo"
+      Role: !Sub "${GlueRole}"
+      Command:
+        Name: glueetl
+        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sor_rodolfo.py"
+        PythonVersion: "3"
+      NumberOfWorkers: 2
+      WorkerType: G.1X
+      Timeout: 45
+      GlueVersion: '4.0'
+      ExecutionProperty:
+        MaxConcurrentRuns: 2
+      SecurityConfiguration: "glue_security_configuration"
+      Tags:
+        DMA: !Ref TagDMA
+      DefaultArguments:
+        --enable-glue-datacatalog: 'true'
+        --enable-spark-ui: 'true'
+
+  ProdutoCreditoSotJob:
+    Type: AWS::Glue::Job
+    Properties:
+      Name: "corp_produto_cartao_credito_sot_rodolfo"
+      Role: !Sub "${GlueRole}"
+      Command:
+        Name: glueetl
+        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_sot_rodolfo.py"
+        PythonVersion: "3"
+      NumberOfWorkers: 2
+      WorkerType: G.1X
+      Timeout: 45
+      GlueVersion: '4.0'
+      ExecutionProperty:
+        MaxConcurrentRuns: 2
+      SecurityConfiguration: "glue_security_configuration"
+      Tags:
+        DMA: !Ref TagDMA
+      DefaultArguments:
+        --enable-glue-datacatalog: 'true'
+        --enable-spark-ui: 'true'
+
+  ProdutoCreditoSpecJob:
+    Type: AWS::Glue::Job
+    Properties:
+      Name: "corp_produto_cartao_credito_spec_rodolfo"
+      Role: !Sub "${GlueRole}"
+      Command:
+        Name: glueetl
+        ScriptLocation: !Sub "s3://${GlueScriptsS3}/scripts/script_spec_rodolfo.py"
+        PythonVersion: "3"
+      NumberOfWorkers: 2
+      WorkerType: G.1X
+      Timeout: 45
+      GlueVersion: '4.0'
+      ExecutionProperty:
+        MaxConcurrentRuns: 2
+      SecurityConfiguration: "glue_security_configuration"
+      Tags:
+        DMA: !Ref TagDMA
+      DefaultArguments:
+        --enable-glue-datacatalog: 'true'
+        --enable-spark-ui: 'true'
