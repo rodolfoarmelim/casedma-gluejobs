@@ -55,4 +55,4 @@ df_sor = df_sor.withColumn('dt_carga', from_utc_timestamp(lit(datetime.now().str
                .withColumn('anomes', date_format(col("trans_date_trans_time"), "yyyyMM").cast(IntegerType()))
 
 # Escreve os dados na tabela db_sor_banco_xis.produto_credito_sor via insertInto
-df_sor.write.insertInto("db_sor_banco_xis.produto_credito_sor", overwrite=True)
+df_sor.write.insertInto("db_sor_banco_xis.produto_credito_sor_rodolfo", overwrite=True)

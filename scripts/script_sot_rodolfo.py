@@ -20,7 +20,7 @@ spark.conf.set('hive.exec.dynamic.partition.mode', 'nonstrict')
 # Lendo a tabela como DynamicFrame e convertendo para DataFrame
 df_produto_credito = glueContext.create_dynamic_frame.from_catalog(
     database="db_sor_banco_xis",
-    table_name="produto_credito_sor"
+    table_name="produto_credito_sor_rodolfo"
 ).toDF()
 
 # Selecionando as colunas desejadas
@@ -61,4 +61,4 @@ df_filtrado = df_filtrado.select(
 )
 
 # Salvando a tabela final
-df_filtrado.write.insertInto("db_sot_banco_xis.produto_credito_sot", overwrite=True)
+df_filtrado.write.insertInto("db_sot_banco_xis.produto_credito_sot_rodolfo", overwrite=True)
