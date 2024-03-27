@@ -62,7 +62,6 @@ Resources:
       GlueVersion: '4.0'
       ExecutionProperty:
         MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
       Tags:
         DMA: !Ref TagDMA
       DefaultArguments:
@@ -84,7 +83,6 @@ Resources:
       GlueVersion: '4.0'
       ExecutionProperty:
         MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
       Tags:
         DMA: !Ref TagDMA
       DefaultArguments:
@@ -106,7 +104,6 @@ Resources:
       GlueVersion: '4.0'
       ExecutionProperty:
         MaxConcurrentRuns: 2
-      SecurityConfiguration: "glue_security_configuration"
       Tags:
         DMA: !Ref TagDMA
       DefaultArguments:
@@ -128,7 +125,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -150,7 +146,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -172,7 +167,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -194,7 +188,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -216,7 +209,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -238,7 +230,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -260,7 +251,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -282,7 +272,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -304,7 +293,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -326,7 +314,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -347,8 +334,7 @@ Resources:
         Timeout: 45
         GlueVersion: '4.0'
         ExecutionProperty:
-          MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
+          MaxConcurrentRuns: 2        
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -369,8 +355,7 @@ Resources:
         Timeout: 45
         GlueVersion: '4.0'
         ExecutionProperty:
-          MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
+          MaxConcurrentRuns: 2        
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -392,7 +377,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -414,7 +398,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -436,7 +419,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -458,7 +440,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -480,7 +461,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -502,7 +482,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -524,7 +503,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -546,7 +524,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -568,7 +545,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -590,7 +566,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -612,7 +587,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -634,7 +608,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -656,7 +629,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -678,7 +650,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -700,7 +671,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -722,7 +692,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -744,7 +713,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -766,7 +734,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -788,7 +755,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -810,7 +776,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -832,7 +797,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -854,7 +818,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -876,7 +839,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
@@ -898,7 +860,6 @@ Resources:
         GlueVersion: '4.0'
         ExecutionProperty:
           MaxConcurrentRuns: 2
-        SecurityConfiguration: "glue_security_configuration"
         Tags:
           DMA: !Ref TagDMA
         DefaultArguments:
