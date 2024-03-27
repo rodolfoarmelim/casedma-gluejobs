@@ -11,7 +11,7 @@
     "GlueRoleJaqueline": "arn:aws:iam::850202893763:role/RoleProducerDMAjaqueline",
     "GlueRoleLucas": "arn:aws:iam::850202893763:role/RoleProducerDMAlucas",
     "GlueRoleNatalia": "arn:aws:iam::850202893763:role/RoleProducerDMAnatalia",
-    "GlueRolRafaella": "arn:aws:iam::850202893763:role/RoleProducerDMArafaella",
+    "GlueRoleRafaella": "arn:aws:iam::850202893763:role/RoleProducerDMArafaella",
     "GlueRoleRenato": "arn:aws:iam::850202893763:role/RoleProducerDMArenato",
     "GlueRoleScarlet": "arn:aws:iam::850202893763:role/RoleProducerDMAscarlet",
     "GlueRoleVanessa": "arn:aws:iam::850202893763:role/RoleProducerDMAvanessa"
